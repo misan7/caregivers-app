@@ -1,9 +1,14 @@
 const express = require('express')
+const path = require('path')
 const app = express()
 
-// const PORT = process.env.PORT
-const PORT = 3000
+if (process.env.NODE_ENV !== 'production') {
+	console.log('[LOCAL] configuring ENV from .env ...')
+  require('dotenv').config()
+}
 
-app.use(express.static('public'))
+const PORT = process.env.PORT
+
+app.use(express.static( path.join( __dirname, '../public') ) )
 
 app.listen(PORT, () => console.log(`B-) Caregivers running on PORT ${PORT}`))
