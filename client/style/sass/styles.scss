@@ -1,0 +1,88 @@
+body {
+    background-image: url(../../img/616718_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px;
+}
+
+/* navbar styles */
+
+.logo-app {
+    display: flex;
+    height: 100%;
+    padding: 10px !important;
+}
+
+.inner-addon {
+    position: relative;
+    .glyphicon {
+        position: absolute;
+        padding: 10px;
+        pointer-events: none;
+    }
+}
+
+.right-addon {
+    .glyphicon {
+        right: 0px;
+    }
+    input {
+        padding-right: 30px;
+    }
+}
+
+#login-dp {
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, .8);
+    .help-block {
+        font-size: 12px
+    }
+    .bottom {
+        background-color: rgba(255, 255, 255, .8);
+        border-top: 1px solid #ddd;
+        clear: both;
+        padding: 14px;
+    }
+    .social-buttons {
+        margin: 12px 0;
+        a {
+            width: 49%;
+        }
+    }
+    .form-group {
+        margin-bottom: 10px;
+    }
+}
+
+.btn-fb {
+    color: #fff;
+    background-color: #3b5998;
+    &:hover {
+        color: #fff;
+        background-color: #496ebc
+    }
+}
+
+.btn-tw {
+    color: #fff;
+    background-color: #55acee;
+    &:hover {
+        color: #fff;
+        background-color: #59b5fa;
+    }
+}
+
+@media(max-width:768px) {
+    #login-dp {
+        background-color: inherit;
+        color: #fff;
+        .bottom {
+            background-color: inherit;
+            border-top: 0 none;
+        }
+    }
+}

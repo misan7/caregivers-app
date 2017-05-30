@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prestart": "npm install",
+    "post install": "bower install",
     "start": "node server/app",
     "dev": "supervisor server/app"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bower": "^1.8.0",
     "express": "^4.15.3"
   },
   "devDependencies": {
