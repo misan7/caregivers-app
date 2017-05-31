@@ -1,5 +1,11 @@
 header {
   background-image: url("../img/cover.jpg"); }
+  header #header-content-pad {
+    padding-left: 0;
+    padding-right: 0; }
+  header .jumbotron {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); }
 
 #search-results #mainNav {
   background: black;
