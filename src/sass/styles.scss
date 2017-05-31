@@ -22,3 +22,16 @@ header {
 #search-results .list-results li img {
     width: 100%;
 }
+
+footer {
+    background: #222222;
+    color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+        margin: 0;
+    }
+}
