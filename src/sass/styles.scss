@@ -1,24 +1,24 @@
 header {
-	background-image: url('../img/cover.jpg');
-	#header-content-pad {
-		padding-left: 0;
-		padding-right: 0;
-	}
-	.jumbotron {
-		width: 100%;
-		background: rgba(0,0,0,0.5);
-	}
+    background-image: url('../img/cover.jpg');
+    #header-content-pad {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .jumbotron {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
 }
 
 #search-results #mainNav {
-	background: black;
-	color: white;
+    background: black;
+    color: white;
 }
 
 #search-results .list-results li {
-	width: 100px;
+    width: 100px;
 }
 
 #search-results .list-results li img {
-	width: 100%;
+    width: 100%;
 }

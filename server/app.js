@@ -2,7 +2,9 @@ const express = require('express')
 const path = require('path')
 const app = express()
 
-require('dotenv').load()
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config()
+}
 
 const PORT = process.env.PORT
 
