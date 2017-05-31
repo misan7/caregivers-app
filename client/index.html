@@ -10,8 +10,10 @@
 </head>
 
 <body>
+	<div class="main-box">
+	<img class="main-img" src="img/616718_1920.jpg">
     <nav class="navbar navbar-default navbar-inverse" role="navigation">
-        <div class="container-fluid">
+        <div class="container">
             <div class="navbar-header logo-title">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -43,53 +45,51 @@
                         </ul>
                     </li>
                     <li><a href="#">Inicia Sesión</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
-                        <ul id="login-dp" class="dropdown-menu">
-                            <li>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        Login via
-                                        <div class="social-buttons">
-                                            <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                                            <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
-                                        </div>
-                                        or
-                                        <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-                                            <div class="form-group">
-                                                <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                                <div class="help-block text-right"><a href="">Forget the password ?</a></div>
-                                            </div>
-                                            <div class="form-group">
-                                                <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox"> keep me logged-in
-                                                </label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="bottom text-center">
-                                        New here ? <a href="#"><b>Join Us</b></a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
+                    <li><a href="#"><b>Únete como profesional</b></a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
-<script src="/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <div class="container">
+        <div class="jumbotron jumbotron-style">
+            <h2>TU BUSCADOR DE CUIDADORAS Y CENTROS RESIDENCIALES</h2>
+            <p>¡Tenemos al profesional perfecto para cuidar a los tuyos!</p>
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" placeholder="Buscar" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="box-service">
+        <h2>¿Qué tipo de servicio necesitas?</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12"><img class="img-responsive index-service" src="img/616718_1920.jpg" /></div>
+                <div class="col-md-6 col-sm-6 col-xs-6"><img class="img-responsive index-service" src="img/616718_1920.jpg" /></div>
+                <div class="col-md-6 col-sm-6 col-xs-6"><img class="img-responsive index-service" src="img/616718_1920.jpg" /></div>
+                <div class="col-md-12 col-sm-12 col-xs-12"><img class="img-responsive index-service" src="img/616718_1920.jpg" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="box-pro">
+        <h2>¿Eres cuidador o tienes un centro?</h2>
+        <div class="ui-group-buttons">
+            <button type="button" class="btn btn-primary btn-lg">Registrarse como Cuidador</button>
+            <div class="or or-lg"></div>
+            <button type="button" class="btn btn-success btn-lg">Registrarse como Centro</button>
+        </div>
+    </div>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
