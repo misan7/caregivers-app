@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+  	"build:sass": "node-sass src/sass/styles.scss client/css/styles.css",
+  	"build:sass:watch": "node-sass src/sass/styles.scss client/css/styles.css --watch",
     "prestart": "npm install",
-    "post install": "bower install",
+    "postinstall": "bower install",
     "start": "node server/app",
     "dev": "supervisor server/app"
   },
@@ -16,6 +18,7 @@
     "express": "^4.15.3"
   },
   "devDependencies": {
-    "dotenv": "^4.0.0"
+    "dotenv": "^4.0.0",
+    "node-sass": "^4.5.3"
   }
 }

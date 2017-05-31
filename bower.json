@@ -17,6 +17,9 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "font-awesome": "^4.7.0",
+    "magnific-popup": "^1.1.0",
+    "scrollreveal": "^3.3.5"
   }
 }
