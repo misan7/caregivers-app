@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="ccApp">
 
 <head>
     <meta charset="utf-8">
@@ -22,144 +22,19 @@
 </head>
 
 <body id="page-top">
-    <!-- Beggining of the navbar -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Calm And Care</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#target">Nuestro Objetivo</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Servicios</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contacto</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#sesion">Inicia Sesión</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#unete">Únete como Profesional</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <!-- End of the navbar -->
-    <header>
-        <div id="header-content-pad" class="header-content">
-            <div class="header-content-inner">
-                <div class="jumbotron">
-                    <div class="container">
-                        <h1 id="homeHeading">Tu Buscador De Cuidadoras Y Centros Residenciales</h1>
-                        <hr>
-                        <p>¡Tenemos al profesional perfecto para cuidar a los tuyos!</p>
-                        <a href="search-results.html" class="btn btn-primary btn-xl page-scroll">Ir al Buscador</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section class="bg-primary" id="target">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">¿Cuál es nuestro Objetivo?</h2>
-                    <hr class="light">
-                    <p class="text-faded">Sloop hornswaggle Davy Jones' Locker gangway killick swab tackle coffer warp blow the man down. Killick swab lateen sail galleon Arr crack Jennys tea cup long clothes handsomely topgallant Letter of Marque. Ye furl pillage scuttle piracy aye square-rigged broadside Brethren of the Coast Yellow Jack.</p>
-                    <p class="text-faded">Come about red ensign gun Gold Road capstan handsomely fluke fire ship pirate list. Lee black spot lanyard list splice the main brace barkadeer pillage jack code of conduct yawl. Smartly deadlights shrouds bowsprit chandler wherry lookout rutters splice the main brace Privateer.</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Escríbenos</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">¿Qué tipo de Servicio necesitas?</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-hourglass-half text-primary sr-icons"></i>
-                        <h3>Jornada Parcial</h3>
-                        <p class="text-muted">Me jib fathom main sheet crack Jennys tea cup Sail ho lass warp.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-sun-o text-primary sr-icons"></i>
-                        <h3>Jornada Completa</h3>
-                        <p class="text-muted">Boom holystone weigh anchor shrouds pink jib maroon gabion.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-moon-o text-primary sr-icons"></i>
-                        <h3>Servicio Nocturno</h3>
-                        <p class="text-muted">Lateen sail case shot Plate Fleet gunwalls carouser dead men tell no tales Spanish Main spike.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-building-o text-primary sr-icons"></i>
-                        <h3>Centros Residenciales</h3>
-                        <p class="text-muted">Brethren of the Coast Barbary Coast splice the main brace Sail ho hulk long clothes brig coffer dance the hempen jig quarterdeck.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <aside id="contact" class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>¿Eres cuidador o tienes un centro?</h2>
-                <a href="#" class="btn btn-default btn-xl sr-button reg-btn">Registrarse como Cuidador</a>
-                <a href="#" class="btn btn-default btn-xl sr-button reg-btn">Registrarse como Centro</a>
-            </div>
-        </div>
-    </aside>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Contacta con Nosotros</h2>
-                    <hr class="primary">
-                    <p>Tender grog blossom prow run a rig Cat o'nine tails Admiral of the Black run a shot across the bow reef sails walk the plank brig blow the man down grapple. Brig Sink me chase guns walk the plank Jack Ketch list grog blossom cutlass trysail sheet fluke ho.</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-4x sr-contact"></i>
-                    <p>+00 000 000 000</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-4x sr-contact"></i>
-                    <p><a href="mailto:my-email@my-domain.com">info@calmandcare.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <p>COPYRIGHT © 2017 Calm and Care All Rights Reserved</p>
-    </footer>
+    <div ng-include src='"/templates/includes/header.html"'></div>
+    <ng-view></ng-view>
+    <div ng-include src='"/templates/includes/footer.html"'></div>
+
+
+
+
+    <!-- Angular and Angular Route -->
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-route/angular-route.min.js"></script>
+    <!-- Angular App, Config and Controllers -->
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
     <!-- jQuery -->
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
@@ -169,7 +44,7 @@
     <script src="/bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
     <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
+    <script src="/js/creative.min.js"></script>
 </body>
 
 </html>
