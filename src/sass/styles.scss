@@ -1,5 +1,5 @@
 header {
-    background-image: url('../img/cover.jpg');
+    background-image: url('../img/center.jpg');
     #header-content-pad {
         padding-left: 0;
         padding-right: 0;
@@ -10,17 +10,23 @@ header {
     }
 }
 
-#search-results #mainNav {
-    background: black;
+#search-results {
+    #mainNav {
+    background: #F05F40;
     color: white;
+    }
+    .list-results {
+        li {
+            width: 100px;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 
-#search-results .list-results li {
-    width: 100px;
-}
-
-#search-results .list-results li img {
-    width: 100%;
+.reg-btn {
+    margin: 10px;
 }
 
 footer {
@@ -34,4 +40,8 @@ footer {
     p {
         margin: 0;
     }
+}
+
+.block-info {
+    margin-top: 70px;
 }
