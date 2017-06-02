@@ -7,5 +7,7 @@ angular.module('ccApp')
       .when('/search-results', {
         templateUrl: '/templates/search-results.html',
       })
-
+      .when('/profile', {
+        templateUrl: '/templates/profile.html',
+      })
   })
