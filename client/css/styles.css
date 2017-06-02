@@ -107,11 +107,6 @@ footer {
   z-index: 9;
   width: 20%; }
 
-/***
-Bootstrap Line Tabs by @keenthemes
-A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
-Licensed under MIT
-***/
 /* Tabs panel */
 .tabbable-panel {
   border: 1px solid #eee;
@@ -207,3 +202,9 @@ Licensed under MIT
     margin: -45px 10px 0px 25px;
     z-index: 9;
     width: 20%; } }
+
+/* TLF MODAL */
+#myModal h3 {
+  display: flex;
+  margin: 20px;
+  justify-content: center; }
