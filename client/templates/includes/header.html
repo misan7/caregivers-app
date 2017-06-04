@@ -24,10 +24,10 @@
                     <a class="page-scroll" href="#contact">Contacto</a>
                 </li>
                 <li>
-                    <a class="page-scroll" data-toggle="modal" data-target="#myModal">Inicia Sesión</a>
+                    <a data-toggle="modal" data-target="#logIn">Inicia Sesión</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#unete">Únete como Profesional</a>
+                    <a data-toggle="modal" data-target="#newUser">Únete como Profesional</a>
                 </li>
             </ul>
         </div>
@@ -36,11 +36,10 @@
     <!-- /.container-fluid -->
 </nav>
 <!-- End of the navbar -->
-
-        <div class="modal fade" id="myModal">
-            <div class="modal-dialog modal-md">
-
-                <div class="modal-content">
+<!-- Beggining of Log In Modal -->
+<div class="modal fade" id="logIn">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">x</button>
                 <h3>Inicio de Sesión en Calm And Care</h3>
@@ -61,6 +60,39 @@
             </div>
             <div class="modal-footer">
                 Nuevo en Calm And Care?
-                <a href="#" class="btn btn-danger">Únete</a>
+                <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#newUser" class="close" data-dismiss="modal">Únete</a>
             </div>
-        </div></div>
+        </div>
+    </div>
+    </div>
+    <!-- End of Log In Modal -->
+    <div class="modal fade" id="newUser">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">x</button>
+                <h3>Crear Perfil en Calm And Care</h3>
+            </div>
+            <div class="modal-body">
+                <form method="post" action='' name="newUser_form">
+                    <p>
+                        <input type="text" class="span3" name="userName" id="userName" placeholder="Nombre de Usuario">
+                    </p>
+                    <p>
+                        <input type="text" class="span3" name="eid" id="email" placeholder="Correo electrónico">
+                    </p>
+                    <p>
+                        <input type="password" class="span3" name="passwd" placeholder="Contraseña">
+                    </p>
+                    <p>
+                        <button type="submit" class="btn btn-danger">Crear Cuenta</button>
+                    </p>
+                </form>
+            </div>
+            <div class="modal-footer">
+                Ya tienes Cuenta?
+                <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#logIn" class="close" data-dismiss="modal">Inicia Sesión</a>
+            </div>
+        </div>
+    </div>
+    </div>
