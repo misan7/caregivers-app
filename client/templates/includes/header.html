@@ -47,31 +47,32 @@
             <div class="modal-body">
                 <form method="post" action='' name="login_form">
                     <p>
-                        <input type="text" class="span3" name="eid" id="email" placeholder="Correo electrónico">
+                        <input type="text" class="span3" name="userName" id="userName" placeholder="Nombre de Usuario">
                     </p>
                     <p>
                         <input type="password" class="span3" name="passwd" placeholder="Contraseña">
                     </p>
                     <p>
                         <button type="submit" class="btn btn-danger">Inicia Sesión</button>
-                        <a href="#">¿Olvidaste la contraseña?</a>
+                        <a data-toggle="modal" data-target="#newPass">¿Olvidaste la contraseña?</a>
                     </p>
                 </form>
             </div>
             <div class="modal-footer">
-                Nuevo en Calm And Care?
+                ¿Nuevo en Calm And Care?
                 <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#newUser" class="close" data-dismiss="modal">Únete</a>
             </div>
         </div>
     </div>
-    </div>
-    <!-- End of Log In Modal -->
-    <div class="modal fade" id="newUser">
+</div>
+<!-- End of Log In Modal -->
+<!-- Beggining of Register Modal -->
+<div class="modal fade" id="newUser">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">x</button>
-                <h3>Crear Perfil en Calm And Care</h3>
+                <h3>Crear Cuenta en Calm And Care</h3>
             </div>
             <div class="modal-body">
                 <form method="post" action='' name="newUser_form">
@@ -90,9 +91,30 @@
                 </form>
             </div>
             <div class="modal-footer">
-                Ya tienes Cuenta?
+                ¿Ya tienes Cuenta?
                 <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#logIn" class="close" data-dismiss="modal">Inicia Sesión</a>
             </div>
         </div>
     </div>
+</div>
+<!-- End of Register Modal -->
+<!-- Beggining of New Password Demand Modal -->
+<div id="newPass" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">x</button>
+                <h3>Nueva Contraseña</h3>
+            </div>
+            <div class="modal-body">
+                <p>Servicio en construcción</p>
+                <div class="btn-group btn-group-justified">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar Ventana</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+<!-- End of New Password Demand Modal -->

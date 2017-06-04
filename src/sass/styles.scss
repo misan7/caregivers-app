@@ -21,6 +21,10 @@ body {
     }
 }
 
+.modal-body a {
+    cursor: pointer;
+}
+
 .reg-btn {
     margin: 10px;
 }
@@ -268,12 +272,13 @@ footer {
     }
 }
 
+
 /* TLF MODAL */
 
 #myModal {
     h3 {
-    display: flex;
-    margin: 20px;
-    justify-content: center;
-}
+        display: flex;
+        margin: 20px;
+        justify-content: center;
+    }
 }

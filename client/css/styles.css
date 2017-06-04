@@ -15,6 +15,9 @@ body {
   .navbar a {
     cursor: pointer; }
 
+.modal-body a {
+  cursor: pointer; }
+
 .reg-btn {
   margin: 10px; }
 
