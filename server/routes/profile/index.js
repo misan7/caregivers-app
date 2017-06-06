@@ -4,7 +4,7 @@ const router = express.Router()
 const updateProfile = require('./handlers/updateProfile')
 const deleteProfile = require('./handlers/deleteProfile')
 
-router.put('/', updateProfile)
-router.delete('/', deleteProfile)
+router.put('/:id', updateProfile)
+router.delete('/:id', deleteProfile)
 
 module.exports = router
