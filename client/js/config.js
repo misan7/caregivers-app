@@ -10,4 +10,7 @@ angular.module('ccApp')
       .when('/profile', {
         templateUrl: '/templates/profile.html',
       })
+      .when('/edit-profile', {
+        templateUrl: '/templates/edit-profile.html',
+      })
   })
