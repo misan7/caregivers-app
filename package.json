@@ -4,21 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  	"build:sass": "node-sass src/sass/styles.scss client/css/styles.css",
-  	"build:sass:watch": "node-sass src/sass/styles.scss client/css/styles.css --watch",
+    "build:sass": "node-sass src/sass/styles.scss client/css/styles.css",
+    "build:sass:watch": "node-sass src/sass/styles.scss client/css/styles.css --watch",
     "prestart": "npm install",
     "postinstall": "bower install",
-    "start": "node server/app",
-    "dev": "supervisor server/app"
+    "start": "node index",
+    "dev": "supervisor index"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "bower": "^1.8.0",
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "mongoose": "^4.10.4"
   },
   "devDependencies": {
     "dotenv": "^4.0.0",
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.5.3",
+    "supervisor": "^0.12.0"
   }
 }

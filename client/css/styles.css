@@ -1,41 +1,7 @@
-header {
-  background-image: url("../img/center.jpg"); }
-  header #header-content-pad {
-    padding-left: 0;
-    padding-right: 0; }
-  header .jumbotron {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5); }
-
-body {
-  padding: 0; }
-
-.navbar {
-  background-color: rgba(0, 0, 0, 0.8); }
-  .navbar a {
-    cursor: pointer; }
-
-.modal-body a {
-  cursor: pointer; }
-
+/*--------- HOME STYLES -------------------------------------------*/
 .reg-btn {
   margin: 10px; }
 
-footer {
-  background: #222222;
-  color: white;
-  height: 100px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  footer p {
-    margin: 0; }
-
-.block-info {
-  margin-top: 70px; }
-
-/*/ HOME SEARCH BARS */
 .well-searchbox {
   padding: 20px;
   background: rgba(0, 0, 0, 0.6);
@@ -80,31 +46,22 @@ footer {
     background-color: #f6877e;
     color: #fff; }
 
-/* LI RESULTS FROM SEARCH */
-.search-profile {
-  font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
-  margin-top: 90px; }
-  .search-profile:hover {
-    background-color: rgba(239, 184, 64, 0.1); }
-  .search-profile .search-text {
-    display: flex;
-    justify-content: center;
-    flex-direction: column; }
-    .search-profile .search-text h3 {
-      margin: 0; }
-    .search-profile .search-text .btn {
-      width: 100%;
-      transition: all ease-in-out .15s;
-      border: 0;
-      background-color: #F05F40;
-      border: 1px solid #F05F40;
-      color: #fff; }
-      .search-profile .search-text .btn:hover {
-        border: 1px solid #f6877e;
-        background-color: #f6877e;
-        color: #fff; }
+/*--------- MODAL -------------------------------------------*/
+#myModal h3 {
+  display: flex;
+  margin: 20px;
+  justify-content: center; }
 
-/* PROFILE STYLES */
+.modal-body a {
+  cursor: pointer; }
+
+/*--------- NAVBAR -------------------------------------------*/
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8); }
+  .navbar a {
+    cursor: pointer; }
+
+/*--------- PROFILE STYLES -------------------------------------------*/
 .fb-profile img.fb-image-lg {
   z-index: 0;
   width: 100%;
@@ -114,6 +71,9 @@ footer {
   margin: -90px 10px 20px 80px;
   z-index: 9;
   width: 20%; }
+
+.fb-profile-text h1 {
+  margin-top: 0; }
 
 /* Tabs panel */
 .tabbable-panel {
@@ -211,8 +171,65 @@ footer {
     z-index: 9;
     width: 20%; } }
 
-/* TLF MODAL */
-#myModal h3 {
+/*--------- LI RESULTS FROM SEARCH -------------------------------------------*/
+.body-list {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  margin-top: 50px; }
+  .body-list .every-item {
+    padding: 0; }
+  .body-list .list-profile {
+    width: 100%;
+    height: 100%;
+    margin: 0; }
+    .body-list .list-profile .search-profile {
+      font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
+      margin: 20px; }
+      .body-list .list-profile .search-profile:hover {
+        background-color: rgba(239, 184, 64, 0.1);
+        box-shadow: 0 0 5px 2px #f05f40; }
+      .body-list .list-profile .search-profile .search-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: black; }
+        .body-list .list-profile .search-profile .search-text .btn {
+          width: 100%;
+          transition: all ease-in-out .55s;
+          border: 0;
+          background-color: #F05F40;
+          border: 1px solid #F05F40;
+          color: #fff; }
+          .body-list .list-profile .search-profile .search-text .btn:hover {
+            border: 1px solid #f6877e;
+            background-color: #f6877e;
+            color: #fff; }
+        .body-list .list-profile .search-profile .search-text h3,
+        .body-list .list-profile .search-profile .search-text h4 {
+          margin: 0;
+          color: black; }
+
+/*--------- IMPORTANT TAGS -------------------------------------------*/
+header {
+  background-image: url("../img/center.jpg"); }
+  header #header-content-pad {
+    padding-left: 0;
+    padding-right: 0; }
+  header .jumbotron {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); }
+
+body {
+  padding: 0; }
+
+footer {
+  background: #222222;
+  color: white;
+  height: 100px;
+  width: 100%;
   display: flex;
-  margin: 20px;
+  align-items: center;
   justify-content: center; }
+  footer p {
+    margin: 0; }
