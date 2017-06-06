@@ -11,27 +11,13 @@ const ProfileSchema = new Schema({
 			type: String,
 			required: true
 		},
-		description: {
-			type: String
-		},
-		experience: {
-			type: String
-		},
-		education: {
-			type: String
-		},
-		price: {
-			type: Number
-		},
-		abailability: {
-			type: String
-		},
-		phone: {
-			type: Number
-		},
-		profileimage: {
-			type: String
-		}
+		description: String,
+		experience: String,
+		education: String,
+		price: Number,
+		abailability: Number,
+		phone: Number,
+		profileimage: String
 }, {collection:"profiles"})
 
 const Profile = mongoose.model('Profile', ProfileSchema)
