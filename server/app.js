@@ -5,13 +5,15 @@ const bodyParser = require('body-parser')
 
 const app = express()
 
-const routesProfile = require('./routes/profiles')
+const routesProfiles = require('./routes/profiles')
+const routesProfile = require('./routes/profile')
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.use(express.static(path.join(__dirname, '../client')))
 
-app.use('/profiles', routesProfile)
+app.use('/profiles', routesProfiles)
+app.use('/profile', routesProfile)
 
 module.exports = app

@@ -1,12 +1,11 @@
-const Profiles = require(__base + 'models/Profile')
+const Profile = require(__base + 'models/Profile')
 
 function getAll( req, res ) {
 
-	Profiles.find()
+	Profile.find()
 		.then( showProfiles => {
 			res.json(showProfiles)
 		})
-       
 }
 
 module.exports = getAll
