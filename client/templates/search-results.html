@@ -1,6 +1,6 @@
-<div class="body-list">
+<div id="search-results" class="body-list">
     <ul class="list-profile list-unstyled">
-        <li class="every-item col-xs-12 col-sm-6 col-md-6">
+        <li ng-repeat="profile in profiles" class="every-item col-xs-12 col-sm-6 col-md-6">
             <a href="#!/profile">
                 <div class="well well-sm search-profile">
                     <div class="row">
@@ -9,7 +9,7 @@
                         </div>
                         <div class="col-sm-4 col-md-4 search-text">
                             </br>
-                            <h3><b> <strong>Sarah Connor</strong></b></h3>
+                            <h3><b> <strong>Sarah Connor{{profile.name}}</strong></b></h3>
                             <h4>Barcelona</h4>
                         </div>
                         <div class="col-sm-4 col-md-4 search-text">
