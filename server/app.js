@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 
 app.use(express.static(path.join(__dirname, '../client')))
 
-app.use('/profiles', routesProfiles)
-app.use('/profile', routesProfile)
+app.use('/api/profiles', routesProfiles)
+app.use('/api/profile', routesProfile)
 
 module.exports = app

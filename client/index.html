@@ -22,16 +22,17 @@
 </head>
 
 <body id="page-top">
+
     <div ng-include src='"/templates/includes/header.html"'></div>
     <ng-view></ng-view>
     <div ng-include src='"/templates/includes/footer.html"'></div>
-
+    
     <!-- Angular and Angular Route -->
     <script src="/bower_components/angular/angular.min.js"></script>
     <script src="/bower_components/angular-route/angular-route.min.js"></script>
     <!-- Angular App, Config and Controllers -->
     <script src="js/app.js"></script>
-    <script src="js/config.js"></script>
+    <script src="js/config/config.js"></script>
     <!-- jQuery -->
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
@@ -41,7 +42,8 @@
     <script src="/bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
     <!-- Theme JavaScript -->
-    <script src="/js/creative.min.js"></script>
+    <script src="/js/jquery/creative.min.js"></script>
+    <script src="/js/jquery/main.js"></script>
 </body>
 
 </html>
