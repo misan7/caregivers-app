@@ -2,6 +2,7 @@ angular.module('ccApp')
 
 	.controller('ResultsController', function($scope, $rootScope, ApiService) {
 		$rootScope.section = "search-results"
+		$rootScope.profile = "profile"
 
 		ApiService.getAllProfiles()
 			.then(profiles => $scope.profiles = profiles)

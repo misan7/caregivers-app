@@ -1,11 +1,11 @@
 <div id="search-results" class="body-list">
     <ul class="list-profile list-unstyled">
         <li ng-repeat="profile in profiles" class="every-item col-xs-12 col-sm-6 col-md-6">
-            <a href="#!/profile">
+            <a href="#!/profile/{{profile._id}}">
                 <div class="well well-sm search-profile">
                     <div class="row">
                         <div class="col-sm-4 col-md-4">
-                            <img href="#!/profile" class="img-bg" ng-style="{'background-image':'url({{ profile.profileimage }})'}" ng-alt="{{ profile.name }}">
+                            <img href="#!/profile/{{profile._id}}" class="img-bg" ng-style="{'background-image':'url({{ profile.profileimage }})'}" ng-alt="{{ profile.name }}">
                         </div>
                         <div class="col-sm-4 col-md-4 search-text">
                             </br>
@@ -17,7 +17,7 @@
                             <h3><strong>{{profile.price}}</strong></h3>
                             <h4>€/por Hora</h4>
                             </br>
-                            <a href="#!/profile" class="btn btn-red"><i class="glyphicon glyphicon-eye-open"></i> Perfil</a>
+                            <a href="#!/profile/{{profile._id}}" class="btn btn-red"><i class="glyphicon glyphicon-eye-open"></i> Perfil</a>
                         </div>
                     </div>
                 </div>
