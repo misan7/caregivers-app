@@ -15,7 +15,7 @@ const ProfileSchema = new Schema({
 		experience: String,
 		education: String,
 		price: Number,
-		abailability: Number,
+		availability: [String],
 		phone: Number,
 		profileimage: String
 }, {collection:"profiles"})

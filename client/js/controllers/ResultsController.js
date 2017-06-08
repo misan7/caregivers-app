@@ -1,6 +1,6 @@
 angular.module('ccApp')
 
-	.controller('resultsController', function($scope, $rootScope, ApiService) {
+	.controller('ResultsController', function($scope, $rootScope, ApiService) {
 		$rootScope.section = "search-results"
 
 		ApiService.getAllProfiles()
