@@ -5,16 +5,16 @@
                 <div class="well well-sm search-profile">
                     <div class="row">
                         <div class="col-sm-4 col-md-4">
-                            <img href="#!/profile" class="img-circle img-responsive" src="../img/profile1.jpg">
+                            <img href="#!/profile" class="img-bg" ng-style="{'background-image':'url({{ profile.profileimage }})'}" ng-alt="{{ profile.name }}">
                         </div>
                         <div class="col-sm-4 col-md-4 search-text">
                             </br>
-                            <h3><b> <strong>Sarah Connor{{profile.name}}</strong></b></h3>
-                            <h4>Barcelona</h4>
+                            <h3><b> <strong>{{profile.name}}</strong></b></h3>
+                            <h4>{{profile.location}}</h4>
                         </div>
                         <div class="col-sm-4 col-md-4 search-text">
                             </br>
-                            <h3><strong>20</strong></h3>
+                            <h3><strong>{{profile.price}}</strong></h3>
                             <h4>€/por Hora</h4>
                             </br>
                             <a href="#!/profile" class="btn btn-red"><i class="glyphicon glyphicon-eye-open"></i> Perfil</a>

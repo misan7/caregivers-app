@@ -6,7 +6,7 @@ angular.module('ccApp')
       })
       .when('/search-results', {
         templateUrl: '/templates/search-results.html',
-        controller: 'showSearchProfilesController'
+        controller: 'resultsController'
       })
       .when('/profile', {
         templateUrl: '/templates/profile.html',
