@@ -3,10 +3,10 @@
         <div class="row">
             <div class="fb-profile">
                 <img align="left" class="fb-image-lg" src="../img/mountainCut.jpg" />
-                <img align="left" class="fb-image-profile thumbnail" src="/../img/profile1.jpg" />
+                <img align="left" class="fb-image-profile thumbnail" src="{{profile.profileimage}}" />
                 <div class="fb-profile-text">
-                    <h1>{{ profile.name }} Sarah Connor {{3+6}}</h1>
-                    <h2>Barcelona</h2>
+                    <h1>{{ profile.name }}</h1>
+                    <h2>{{ profile.location }}</h2>
                 </div>
             </div>
         </div>
@@ -24,21 +24,13 @@
                     <div class="tab-content">
                         <div class="tab-pane active" id="tab_default_1">
                             <h4>Descripción</h4>
-                            <p>
-                                Doubloon boom avast run a rig keelhaul rope's end take a caulk cog jury mast square-rigged. Tackle belaying pin lugsail rope's end log keelhaul overhaul Jack Tar ye bilge water. Belay lanyard main sheet Privateer no prey, no pay coxswain plunder squiffy Jack Tar Jolly Roger. Black spot nipperkin boatswain clap of thunder take a caulk chandler spanker aft bilge schooner.
-                            </p>
+                            <p>{{ profile.description }}</p>
                             <h4>Experiencia</h4>
-                            <p>
-                                - To go on account bilge water rutters barkadeer brig Davy Jones' Locker.
-                                <br>- Keelhaul rutters scurvy broadside Pieces of Eight chase.
-                                <br>- Topsail haul wind yard marooned skysail hogshead.
-                                <br>- Gaff clap of thunder line hearties maroon hogshead.
-                            </p>
+                            <p>{{ profile.experience }}</p>
                             <h4>Formación</h4>
-                            <p>- Grog blossom bring a spring upon her cable gabion gally hearties mutiny.
-                                <br>- Lookout grapple lad hail shot reef hempen halter.</p>
+                            <p>{{ education }}</p>
                             <h4>Tarifa</h4>
-                            <p>20€/Por hora</p>
+                            <p>{{ profile.price }}€/Por hora</p>
                         </div>
                     </div>
                 </div>
@@ -69,7 +61,7 @@
                     Teléfono de Contacto
                 </div>
                 <div class="modal-body">
-                    <h3><i class="glyphicon glyphicon-earphone"></i>123-456-789</h3>
+                    <h3><i class="glyphicon glyphicon-earphone"></i>{{profile.phone}}</h3>
                     <div class="btn-group btn-group-justified">
                         <div class="btn-group">
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar Ventana</button>
