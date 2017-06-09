@@ -1,6 +1,6 @@
 # Calm and Care - CRUD
 
-This repository contains a `Full Stack` project. The main theme is a caregivers profile searcher.
+This repository contains a `Full Stack` project using **JavaScript**, **HTML5**, **CSS3**, **Bootstrap**, **jQuery**, **AngularJS**, **NodeJS**, **ES2015**, **ExpressJS**, **MongoDB**. The main purpose of this app is helping users to find a caregiver adapted to their specific needs.
 
 This project responds to localhost:3000/
 
@@ -50,3 +50,11 @@ And console will show the next message:
 
 `{"msg":"profile with id 59365a85fb017f87847d4020 updated properly"}`
 
+
+### Other Tools:
+
+Cloudinary: https://cloudinary.com
+Lorem Ipsum: http://www.pirateipsum.me
+Sublime Text 3: http://www.sublimetext.com
+Heroku: https://www.heroku.com
+mLab: https://mlab.com

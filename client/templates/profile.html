@@ -2,8 +2,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="fb-profile">
-                <img align="left" class="fb-image-lg" src="../img/mountainCut.jpg" />
-                <img align="left" class="fb-image-profile thumbnail" src="{{profile.profileimage}}" />
+                <img align="left" class="fb-image-lg" src="{{ profile.topimage }}" />
+                <img align="left" class="fb-image-profile thumbnail" src="{{ profile.profileimage }}" />
                 <div class="fb-profile-text">
                     <h1>{{ profile.name }}</h1>
                     <h2>{{ profile.location }}</h2>
@@ -28,7 +28,7 @@
                             <h4>Experiencia</h4>
                             <p>{{ profile.experience }}</p>
                             <h4>Formación</h4>
-                            <p>{{ education }}</p>
+                            <p>{{ profile.education }}</p>
                             <h4>Tarifa</h4>
                             <p>{{ profile.price }}€/Por hora</p>
                         </div>

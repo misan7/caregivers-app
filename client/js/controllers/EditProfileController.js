@@ -5,9 +5,9 @@ angular.module('ccApp')
 		$scope.editProfile = function(e) {
 			e.preventDefault()
 			$scope.availability = 'Jornada Parcial'
-			const { name, location, description, experience, education, price, availability, phone, image: profileimage } = $scope
+			const { name, location, description, experience, education, price, availability, phone, image: profileimage, topimage: topimage } = $scope
 
-			ApiService.addProfile({ name, location, description, experience, education, price, availability, phone, profileimage })
+			ApiService.addProfile({ name, location, description, experience, education, price, availability, phone, profileimage, topimage })
 				.then(console.log)
 		}
 	})

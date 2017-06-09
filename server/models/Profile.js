@@ -17,7 +17,8 @@ const ProfileSchema = new Schema({
 		price: Number,
 		availability: [String],
 		phone: Number,
-		profileimage: String
+		profileimage: String,
+		topimage: String,
 }, {collection:"profiles"})
 
 const Profile = mongoose.model('Profile', ProfileSchema)

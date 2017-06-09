@@ -5,7 +5,6 @@ const id = req.params.id
 
 	Profile.findById(id)
 		.then( profile => {
-			console.log(profile)
 			res.json(profile)
 		})
 }
