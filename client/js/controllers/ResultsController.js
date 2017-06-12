@@ -8,7 +8,7 @@ angular.module('ccApp')
 		ApiService.getProfilesByLocation(location)
 			.then(profiles => $scope.profiles = profiles)
 		}
-		else {
+		if (undefined) {
 			ApiService.getAllProfiles()
 			.then(profiles => $scope.profiles = profiles)
 		}
