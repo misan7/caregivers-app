@@ -4,9 +4,10 @@ angular.module('ccApp')
 
 		$routeProvider
 			.when('/', {
-				templateUrl: '/templates/home.html'
+				templateUrl: '/templates/home.html',
+				controller:'SearchController'
 			})
-			.when('/search-results', {
+			.when('/search-results/:location?', {
 				templateUrl: '/templates/search-results.html',
 				controller: 'ResultsController'
 			})

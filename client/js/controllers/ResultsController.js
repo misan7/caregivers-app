@@ -1,14 +1,15 @@
 angular.module('ccApp')
 
-	.controller('ResultsController', function($scope, $rootScope, ApiService) {
+	.controller('ResultsController', function($scope, $rootScope, $routeParams, ApiService) {
 		$rootScope.section = "search-results"
 		$rootScope.profile = "profile"
-
-		ApiService.getAllProfiles()
+		const location = $routeParams.location
+		if(location){
+		ApiService.getProfilesByLocation(location)
 			.then(profiles => $scope.profiles = profiles)
-
-		// $scope.removePizza = function(id) {
-		// 	ApiService.removePizza(id)
-		// 		.then(console.log)
-		// }
+		}
+		else {
+			ApiService.getAllProfiles()
+			.then(profiles => $scope.profiles = profiles)
+		}
 	})

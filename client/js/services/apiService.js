@@ -15,10 +15,16 @@ angular.module('ccApp')
 		function getProfileById(id) {
 			return $http.get(`/api/profile/${id}`)
 		}
-		// function removePizza( id ) {
-		// 	return $http.delete(`/api/pizza/${id}`)
-		// 		.then( response => response.data )
-		// }
 
-		return { getAllProfiles, addProfile, getProfileById }
+		function getProfilesByLocation(location) {
+			return $http.get('/api/profiles/' + location)
+				.then(response => response.data)
+		}
+
+		function removeProfile( id ) {
+			return $http.delete(`/api/profile/${id}`)
+				.then( response => response.data )
+		}
+
+		return { getAllProfiles, addProfile, getProfileById, getProfilesByLocation, removeProfile }
 	})

@@ -1,23 +1,17 @@
-<header>
+<header class= "">
     <div id="header-content-pad" class="header-content">
         <div class="header-content-inner">
             <div class="jumbotron">
-                <div class="container">
+                <div class="container mainHome">
                     <h1 id="homeHeading">Tu Buscador De Cuidadoras Y Centros Residenciales</h1>
                     <hr>
                     <p>¡Tenemos al profesional perfecto para cuidar a los tuyos!</p>
-                    <form class="search-container">
+                    <form class="search-container" ng-submit="searchQuery()">
                         <div class="input-container">
-                            <input class="form-input" type="text" placeholder="Escribe aquí tu ciudad">
-                            <select class="form-input">
-                                <option value="">Buscar Cuidadoras y Centros</option>
-                                <option value="">Solo Cuidadoras</option>
-                                <option value="">Solo Centros de Día</option>
-                                <option value="">Solo Centros Residenciales</option>
-                            </select>
+                            <input ng-model="location" class="form-input" type="text" placeholder="Escribe aquí tu ciudad">
                         </div>
                         <div class="btn-container">
-                            <a href="#!/search-results" type="submit" class="btn btn-red"><i class="fa fa-search"></i> Search </a>
+                            <a type="submit" class="btn btn-red"><i class="fa fa-search"></i> Buscar </a>
                         </div>
                     </form>
                 </div>
