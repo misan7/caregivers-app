@@ -21,7 +21,10 @@
     "dotenv": "^4.0.0"
   },
   "devDependencies": {
+    "cheerio": "^1.0.0-rc.1",
     "node-sass": "^4.5.3",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
     "supervisor": "^0.12.0"
   }
 }

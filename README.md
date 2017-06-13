@@ -4,6 +4,8 @@
 
 This repository contains a `Full Stack` project using **JavaScript**, **AngularJS**, **NodeJS**, **ES2015**, **ExpressJS**, **MongoDB**, **Bootstrap**, **jQuery**, **HTML5**, **CSS3**. The main purpose of this app is helping users to find a caregiver adapted to their specific needs.
 
+`npm start` to install bower and npm packages.
+
 This project responds to localhost:3000/
 
 You have to create a file `.env` and type the environment vars to do a correct connection:
@@ -80,4 +82,4 @@ mLab: https://mlab.com
 
 ## Thanks To...
 
-Juanma, Alex, Manuel, Yair, David, Àngels, Manuela, Skylab Coders, friends...
+Juanma, Alex, Manuel, David, Àngels, Bea, Manuela, Skylab Coders, friends...
