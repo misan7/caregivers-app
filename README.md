@@ -6,6 +6,13 @@ This repository contains a `Full Stack` project using **JavaScript**, **AngularJ
 
 This project responds to localhost:3000/
 
+You have to create a file `.env` and type the environment vars to do a correct connection:
+
+```
+DB_URL=mongodb://localhost:27017/keepcalm
+PORT=3000
+```
+
 
 ## Available actions {CRUD}
 
