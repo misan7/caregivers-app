@@ -22,6 +22,7 @@
     "magnific-popup": "^1.1.0",
     "scrollreveal": "^3.3.5",
     "angular": "^1.6.4",
-    "angular-route": "^1.6.4"
+    "angular-route": "^1.6.4",
+    "angular-jwt": "^0.1.9"
   }
 }

@@ -1,5 +1,4 @@
 angular.module('ccApp')
-
 	.controller('EditProfileController', function($scope, $rootScope, ApiService) {
 
 		$scope.editProfile = function(e) {

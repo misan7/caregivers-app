@@ -1,1 +1,1 @@
-angular.module('ccApp', ['ngRoute'])
+angular.module('ccApp', ['ngRoute', 'angular-jwt'])

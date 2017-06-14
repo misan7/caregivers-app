@@ -1,0 +1,37 @@
+<div id="login">
+    <div>
+        <h3>Inicio de Sesión en Calm And Care</h3>
+    </div>
+    <div class="modal-body">
+        <form ng-submit="login($event)">
+            <input ng-model="username" type="text" class="span3" id="username" placeholder="Nombre de Usuario">
+            <input ng-model="password" type="password" class="span3" placeholder="Contraseña">
+            <button type="submit" class="btn btn-danger">Inicia Sesión</button>
+            <a data-toggle="modal" data-target="#newPass">¿Olvidaste la contraseña?</a>
+        </form>
+    </div>
+    <div class="modal-footer">
+        ¿Nuevo en Calm And Care?
+        <a href="#!/register" class="btn btn-danger">Únete</a>
+    </div>
+</div>
+<!-- Beggining of New Password Demand Modal -->
+<div id="newPass" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">x</button>
+                <h3>Nueva Contraseña</h3>
+            </div>
+            <div class="modal-body">
+                <p>Servicio en construcción</p>
+                <div class="btn-group btn-group-justified">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar Ventana</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of New Password Demand Modal -->

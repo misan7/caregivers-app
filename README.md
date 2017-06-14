@@ -8,7 +8,7 @@ This repository contains a `Full Stack` project using **JavaScript**, **AngularJ
 
 This project responds to localhost:3000/
 
-You have to create a file `.env` and type the environment vars to do a correct connection:
+You have to create a file `.env` and write the environment vars to do a correct connection:
 
 ```
 DB_URL=mongodb://localhost:27017/keepcalm
@@ -79,6 +79,12 @@ Sublime Text 3: http://www.sublimetext.com
 Heroku: https://www.heroku.com
 
 mLab: https://mlab.com
+
+## Future Implementations:
+
+- I want to use `ng-map` for a better localization of centers; and add a radius on the map for knowing where the profesionalslive.
+- Filter searchs for price, journey and if it's a center or not.
+- Improve the Responsive Design
 
 ## Thanks To...
 

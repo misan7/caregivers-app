@@ -1,5 +1,4 @@
 angular.module('ccApp')
-
 	.factory('ApiService', function($http) {
 
 		function getAllProfiles() {
