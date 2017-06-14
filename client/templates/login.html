@@ -1,18 +1,34 @@
-<div id="login">
-    <div>
-        <h3>Inicio de Sesión en Calm And Care</h3>
-    </div>
-    <div class="modal-body">
-        <form ng-submit="login($event)">
-            <input ng-model="username" type="text" class="span3" id="username" placeholder="Nombre de Usuario">
-            <input ng-model="password" type="password" class="span3" placeholder="Contraseña">
-            <button type="submit" class="btn btn-danger">Inicia Sesión</button>
-            <a data-toggle="modal" data-target="#newPass">¿Olvidaste la contraseña?</a>
-        </form>
-    </div>
-    <div class="modal-footer">
-        ¿Nuevo en Calm And Care?
-        <a href="#!/register" class="btn btn-danger">Únete</a>
+<div id="login" class="login-form">
+    <div class="container">
+        <div class="row vertical-offset-100">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="row-fluid user-row">
+                            <h1>Inicio de Sesión</h1>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <form ng-submit="login($event)" accept-charset="UTF-8" role="form" class="form-signin">
+                            <fieldset>
+                                <label class="panel-login">
+                                    <div class="login_result"></div>
+                                </label>
+                                <input class="form-control" ng-model="username" type="text" class="span3" id="username" placeholder="Nombre de Usuario">
+                                <input class="form-control" ng-model="password" type="password" class="span3" placeholder="Contraseña">
+                                <br></br>
+                                <button type="submit" class="btn btn-lg btn-success btn-block">Iniciar Sesión</button>
+                                <a data-toggle="modal" data-target="#newPass">¿Olvidaste la contraseña?</a>
+                            </fieldset>
+                            <div class="modal-footer">
+                                ¿Nuevo en Calm And Care?
+                                <a href="#!/register" class="btn btn-danger">Únete</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!-- Beggining of New Password Demand Modal -->
