@@ -1,4 +1,5 @@
 node_modules
 client/bower_components
+.env
 client/img
 server/data

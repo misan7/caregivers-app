@@ -14,14 +14,14 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#!/login">Inicia Sesión</a></li>
-                <li><a href="#!/register">Únete como Profesional</a></li>
+                <li ng-hide="loggedUser"><a href="#!/login">Inicia Sesión</a></li>
+                <li ng-hide="loggedUser"><a href="#!/register">Únete como Profesional</a></li>
                 <li ng-show="loggedUser" class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bienvenida/o {{ loggedUser }} <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#!/edit-profile">Editar Perfil</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#!/">Salir</a></li>
+                        <li><a href="#!/logout">Salir</a></li>
                     </ul>
                 </li>
             </ul>

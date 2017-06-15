@@ -27,4 +27,8 @@ angular.module('ccApp')
                     templateUrl: '/templates/register.html',
                     controller: 'RegisterController'
                 })
+                .when('/logout', {
+                    template: '<p>hey</p>',
+                    controller: 'LogoutController'
+                })
     })
