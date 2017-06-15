@@ -2,13 +2,13 @@
     <fieldset>
         <legend>Perfil Profesional</legend>
         <div class="form-group">
-            <label class="col-md-4 control-label">Nombre</label>
+            <label class="col-md-4 control-label">Nombre*</label>
             <div class="col-md-4">
                 <input ng-model="name" id="nameProfile" type="text" placeholder="Introduce tu nombre o el de tu Centro" class="form-control input-md">
             </div>
         </div>
         <div class="form-group">
-            <label class="col-md-4 control-label">Localidad</label>
+            <label class="col-md-4 control-label">Localidad*</label>
             <div class="col-md-4">
                 <input ng-model="location" id="locationProfile" type="text" placeholder="P.ej: Barcelona" class="form-control input-md">
             </div>
@@ -69,15 +69,18 @@
                 <input ng-model="image" id="imageProfile" type="text" placeholder="Copia aquí la URL de tu imagen de Perfil" class="form-control input-md">
             </div>
         </div>
-        <div class="form-group">
+        <!--         <div class="form-group">
             <label class="col-md-4 control-label">Foto de Portada</label>
             <div class="col-md-4">
                 <input ng-model="topimage" id="imageTopProfile" type="text" placeholder="Copia aquí la URL de tu imagen de Portada" class="form-control input-md">
             </div>
-        </div>
+        </div> -->
         <div class="form-group-btn">
             <button type="submit" class="btn btn-success">Guardar Cambios</button>
             <a href="#!/#page-top" class="btn btn-danger">Volver</a>
+        </div>
+        <div class="form-group">
+                <p class="asterisk">*- Los campos con asterisco son campos obligatorios</p>
         </div>
     </fieldset>
 </form>
