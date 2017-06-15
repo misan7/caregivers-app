@@ -1,5 +1,5 @@
 angular.module('ccApp')
-    .controller('RegisterController', function($scope, $rootScope, AuthService) {
+    .controller('RegisterController', function($scope, $rootScope, AuthService, toastr, $location) {
 
         $rootScope.section = 'register'
 
@@ -8,7 +8,14 @@ angular.module('ccApp')
             const { username, password } = $scope
 
             AuthService.register(username, password)
-                .then(console.log)
-                .catch(console.log)
+                .then(msg => {
+                    console.log(msg)
+                    toastr.success('Has creado tu cuenta correctamente', '¡Enhorabuena!')
+                    $location.path('/')
+
+                })
+                .catch(() => {
+                    toastr.error('La cuenta ya exite', 'Error')
+                })
         }
     })

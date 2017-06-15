@@ -1,5 +1,5 @@
 angular.module('ccApp')
-    .controller('LoginController', function($scope, $rootScope, ApiService, AuthService) {
+    .controller('LoginController', function($scope, $rootScope, ApiService, AuthService, toastr, $location) {
 
         $rootScope.section = "login"
 
@@ -10,8 +10,12 @@ angular.module('ccApp')
             AuthService.login(username, password)
                 .then(msg => {
                     console.log(msg)
-                        //$location.path('/profile')
+                    toastr.success('Has iniciado Sesión', 'Bienvenido')
+                    $location.path('/')
+
                 })
-                .catch(console.log)
+                .catch(() => {
+                    toastr.error('Password o nombre de usuario incorrecto', 'Error')
+                })
         }
     })

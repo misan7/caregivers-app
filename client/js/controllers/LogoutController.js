@@ -1,7 +1,7 @@
 angular.module('ccApp')
-    .controller('LogoutController', function($scope, $location, AuthService) {
+    .controller('LogoutController', function($scope, $location, AuthService, toastr) {
 
         AuthService.logout()
-        console.log("logouting....");
+        toastr.success('Has salido de Calm and Care', 'Hasta Pronto')
         $location.path('/')
     })

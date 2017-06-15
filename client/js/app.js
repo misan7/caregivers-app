@@ -1,1 +1,1 @@
-angular.module('ccApp', ['ngRoute', 'angular-jwt'])
+angular.module('ccApp', ['ngRoute', 'angular-jwt', 'toastr'])
