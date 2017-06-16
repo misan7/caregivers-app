@@ -4,15 +4,36 @@
 
 This repository contains a `Full Stack` project using **JavaScript**, **AngularJS**, **NodeJS**, **ES2015**, **ExpressJS**, **MongoDB**, **Bootstrap**, **jQuery**, **HTML5**, **CSS3**. The main purpose of this app is helping users to find a caregiver adapted to their specific needs.
 
-`npm start` to install bower and npm packages.
+## Installation
 
-This project responds to localhost:3000/
+`npm start` in your console to install **bower** and **npm packages**.
 
-You have to create a file `.env` and write the environment vars to do a correct connection:
+### `.env` file Configuration
+
+You have to create a file `.env` in the main folder and write the environment vars to do a correct connection.
+
+- Port:
+
+```
+PORT=3000
+```
+
+- MongoDB path & database:
 
 ```
 DB_URL=mongodb://localhost:27017/keepcalm
-PORT=3000
+```
+
+- Secret word to seed your webtoken:
+
+```
+SECRET=THISISMYLITTLESECRET
+```
+
+### The URL to start in localhost:
+
+```
+This project responds to localhost:3000/
 ```
 
 
@@ -29,7 +50,6 @@ See all profiles:
 Search a profile by it's ID:
 
 `curl localhost:3000/api/profile/593695db7ba89d0d08654d56`
-
 
 ### [**POST**] - `addProfile`
 
@@ -67,6 +87,9 @@ And console will show the next message:
 
 `{"msg":"profile with id 59365a85fb017f87847d4020 updated properly"}`
 
+### Other Handlers:
+
+`/auth` routes to login/register User.
 
 ## Other Tools:
 
