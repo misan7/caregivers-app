@@ -6,9 +6,7 @@ This repository contains a `Full Stack` project using **JavaScript**, **AngularJ
 
 ## Installation
 
-`npm start` in your console to install **bower** and **npm packages**.
-
-### `.env` file Configuration
+### .env File Configuration
 
 You have to create a file `.env` in the main folder and write the environment vars to do a correct connection.
 
@@ -29,6 +27,11 @@ DB_URL=mongodb://localhost:27017/keepcalm
 ```
 SECRET=THISISMYLITTLESECRET
 ```
+
+### Run the Server:
+
+`npm start` in your console to install **bower** and **npm packages**.
+
 
 ### The URL to start in localhost:
 
@@ -91,6 +94,29 @@ And console will show the next message:
 
 `/auth` routes to login/register User.
 
+## npm Packages, frameworks & tools:
+
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "font-awesome": "^4.7.0",
+    "magnific-popup": "^1.1.0",
+    "scrollreveal": "^3.3.5",
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "angular-jwt": "^0.1.9",
+    "angular-toastr": "^2.1.1",
+    "body-parser": "^1.17.2",
+    "bower": "^1.8.0",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.4",
+    "dotenv": "^4.0.0",
+    "express-jwt": "^5.3.0",
+    "jsonwebtoken": "^7.4.1",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0".
+
 ## Other Tools:
 
 Cloudinary: https://cloudinary.com
@@ -109,6 +135,30 @@ mLab: https://mlab.com
 - Filter searchs for price, journey and if it's a center or not.
 - Improve the Responsive Design
 
-## Thanks To...
+## Author
 
-Juanma, Alex, Manuel, David, Àngels, Bea, Manuela, Skylab Coders, friends...
+[Sergio Morales](https://github.com/misan7)
+
+## Acknowledgments
+
+- [Juanma](https://github.com/juanmaguitar)
+- [Alex](https://github.com/agandia9)
+- Manuel
+- Albert
+
+...And the best mates from Skylab Coders!
+
+- [Bernat](https://github.com/picapoll)
+- [Carles](https://github.com/sernalab)
+- [José Ángel](https://github.com/joseangelbarrera)
+- [Leonel](https://github.com/LeonelAV)
+- [Luis Alberto](https://github.com/lfernandezcall)
+- [Mario](https://github.com/MarioTerron)
+- [Nuria](https://github.com/nuriaescude)
+- [Simón](https://github.com/sgarmendia)
+- [Toni](https://github.com/tonimg)
+- [Wally](https://github.com/studiosally)
+- [Yair](https://github.com/Riay)
+- [Jaume](https://github.com/jaumereg)
+- [Jordi](https://github.com/tsatsan)
+- [Gus](https://github.com/gusblacknails)
