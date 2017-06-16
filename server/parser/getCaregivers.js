@@ -34,6 +34,7 @@ rp(URL_ASTURIAS).then(body => {
 	$caregivers.each( function(index,caregiver) {
 
 		let profileimage = $(caregiver).find('img').attr('src')
+		// profileimage = profileimage.replace('http', 'https')
 		profileimage = 'http://www.nidmi.es' + profileimage
 
 		let name = $(caregiver).find('.name').text()

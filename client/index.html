@@ -25,11 +25,16 @@
 </head>
 
 <body id="page-top" class="wrapper">
-
     <div ng-include src='"/templates/includes/header.html"'></div>
     <ng-view></ng-view>
     <div ng-include src='"/templates/includes/footer.html"'></div>
 
+    <!-- Script to Prevent the DOMContentLoaded Violations -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        console.log("DOM fully loaded and parsed");
+    });
+    </script>
     <!-- ANGULAR/ANGULAR ROUTE/ANGULAR JWB -->
     <script src="/bower_components/angular/angular.min.js"></script>
     <script src="/bower_components/angular-route/angular-route.min.js"></script>
@@ -47,7 +52,7 @@
     <script src="js/controllers/RegisterController.js"></script>
     <script src="js/controllers/LogoutController.js"></script>
     <!-- SERVICES -->
-    <script src="js/services/apiService.js"></script>
+    <script src="js/services/ApiService.js"></script>
     <script src="js/services/ApiService.js"></script>
     <script src="js/services/AuthInterceptor.js"></script>
     <script src="js/services/StorageService.js"></script>
