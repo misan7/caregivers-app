@@ -281,6 +281,8 @@ footer {
 
 .register-form {
   height: 538px !important; }
+  .register-form .register-title {
+    text-align: center; }
   .register-form .form-signin input[type="text"] {
     margin-bottom: 5px;
     border-bottom-left-radius: 0;
@@ -315,6 +317,8 @@ footer {
 
 .login-form {
   height: 538px !important; }
+  .login-form .login-title {
+    text-align: center; }
   .login-form .form-signin input[type="text"] {
     margin-bottom: 5px;
     border-bottom-left-radius: 0;
